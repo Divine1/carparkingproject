@@ -42,3 +42,20 @@ $ npm run generate
 const PORT = 4000
 const SOCKETURL = 'http://localhost:4000';
 ```
+
+## To view data in browser
+
+#### all floors
+`http://localhost:3000`
+
+#### floor1
+`http://localhost:3000/floor1`
+
+#### floor2
+`http://localhost:3000/floor2`
+
+#### floor3
+`http://localhost:3000/floor3`
+
+#### floor4
+`http://localhost:3000/floor4`
