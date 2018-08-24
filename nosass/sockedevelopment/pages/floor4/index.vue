@@ -1,7 +1,7 @@
 <template>
   <div  class="individualfloors">
     <div>FLOOR4</div>
-    <div>{{getFloor4}}</div>
+    <div>{{getAllFloors.floor4}}</div>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   },
   computed: mapGetters(
     [
-      'getFloor4'
+      'getAllFloors'
     ]
   )
 }

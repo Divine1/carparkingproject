@@ -1,7 +1,7 @@
 <template>
   <div  class="individualfloors">
     <div>FLOOR3</div>
-    <div>{{getFloor3}}</div>
+    <div>{{getAllFloors.floor3}}</div>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import {mapGetters} from 'vuex';
 export default {
   computed: mapGetters(
     [
-      'getFloor3'
+      'getAllFloors'
     ]
   )
 }
