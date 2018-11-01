@@ -1,27 +1,22 @@
 <template>
   <div  class="individualfloors">
-    <div>FLOOR4</div>
-    <div>{{getFloor4}}</div>
+    <Floors :floorno="'4'" :slotno="getAllFloors.floor4"/>
   </div>
 </template>
 
 <script>
 
 import {mapGetters} from 'vuex';
-
+import Floors from '@/components/Floors.vue';
 export default {
-  asyncData(context){
-    console.log("in asyncData floor4")
-    //console.log(process.env)
+  components:{
+    Floors
   },
   computed: mapGetters(
     [
-      'getFloor4'
+      'getAllFloors'
     ]
   )
 }
 </script>
 
-<style lang="scss">
-
-</style>

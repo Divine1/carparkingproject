@@ -1,3 +1,5 @@
+const config = require('./constants/config');
+
 const pkg = require('./package')
 
 module.exports = {
@@ -62,7 +64,7 @@ module.exports = {
     }
   },
   env:{
-    PROJECT_PORT : 3000
+    PROJECT_PORT : config.PORT
   }
 
 }

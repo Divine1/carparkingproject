@@ -18,6 +18,8 @@
       <div>FLOOR4</div>
       <div>{{getAllFloors.floor4}}</div>
     </div>
+
+<div class="footers">Powered by Chrysalis  @ Infosys </div>
   </div>
 </template>
 
@@ -29,24 +31,25 @@ export default {
     [
       'getAllFloors'
     ]
-  )
+  ),
+  
 }
 </script>
 
-<style lang="scss">
-  #allfloors{
-    .floor{
-      height: 25vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      div{
-        display: inline-block;
-        font-size: 10vh;
-      }
-      div:nth-child(2){
-        padding: 0 4vw;;
-      }
-    }
+<style>
+  #allfloors .floor{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+    
+  #allfloors .floor div{
+    display: inline-block;
+    font-size: 10vh;
+  }
+  #allfloors .floor div:nth-child(2){
+    padding: 0 4vw;;
+  }
+
 </style>

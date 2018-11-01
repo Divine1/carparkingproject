@@ -1,5 +1,8 @@
-const PORT = 4000
-const SOCKETURL = 'http://localhost:4000';
+const PORT = 4000;
+const HOST = "localhost";
+const PROTOCOL = "http://";
+
+const SOCKETURL = PROTOCOL+HOST+":"+PORT;
 
 
-module.exports= {PORT,SOCKETURL}
+module.exports= {PORT,HOST,SOCKETURL}

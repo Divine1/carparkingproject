@@ -6,7 +6,7 @@ const socketFunction = require("./realtime");
 const app = express()
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-const host = process.env.HOST || '127.0.0.1'
+const host = configFile.HOST || '127.0.0.1'
 //const port = process.env.PORT || 3000
 const port = configFile.PORT || 3000
 
@@ -37,8 +37,8 @@ async function start() {
   // Listen the server
   //app.listen(port, host)
   //console.log('Server listening on http://' + host + ':' + port) // eslint-disable-line no-console
-  http.listen(port,()=>{
-    console.log("http server started at port ",port)
+  http.listen(port,host,()=>{
+    console.log("http server started at port ",port, " host ",host)
   })
   
 }

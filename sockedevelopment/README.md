@@ -23,19 +23,19 @@ $ npm run generate
 ### sample endpoints
 
 #### allfloors 
-`http://localhost:3000/back/floordata?type=allfloors&floor1=41&floor2=42&floor3=93&floor4=84`
+`http://localhost:4000/back/floordata?type=allfloors&floor1=41&floor2=42&floor3=93&floor4=84`
 
 #### floor1
-`http://localhost:3000/back/floordata?type=floor1&floor1=30`
+`http://localhost:4000/back/floordata?type=floor1&floor1=30`
 
 #### floor2
-`http://localhost:3000/back/floordata?type=floor2&floor2=45`
+`http://localhost:4000/back/floordata?type=floor2&floor2=45`
 
 #### floor3
-`http://localhost:3000/back/floordata?type=floor3&floor3=60`
+`http://localhost:4000/back/floordata?type=floor3&floor3=60`
 
 #### floor4
-`http://localhost:3000/back/floordata?type=floor4&floor4=75`
+`http://localhost:4000/back/floordata?type=floor4&floor4=75`
 
 #### change below config values in constants/config.js file
 ```
@@ -47,16 +47,16 @@ const SOCKETURL = 'http://localhost:4000';
 ## To view data in browser
 
 #### all floors
-`http://localhost:3000`
+`http://localhost:4000`
 
 #### floor1
-`http://localhost:3000/floor1`
+`http://localhost:4000/floor1`
 
 #### floor2
-`http://localhost:3000/floor2`
+`http://localhost:4000/floor2`
 
 #### floor3
-`http://localhost:3000/floor3`
+`http://localhost:4000/floor3`
 
 #### floor4
-`http://localhost:3000/floor4
+`http://localhost:4000/floor4

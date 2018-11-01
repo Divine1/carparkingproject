@@ -1,24 +1,21 @@
 <template>
   <div  class="individualfloors">
-    <!-- <h1>floor1</h1>
-    <h3>floor1 {{getFloor1}}</h3> -->
-    <div>FLOOR1</div>
-    <div>{{getFloor1}}</div>
+    <Floors :floorno="'1'" :slotno="getAllFloors.floor1"/>  
   </div>
 </template>
 
 <script>
 import {mapGetters} from 'vuex';
-
+import Floors from '@/components/Floors.vue';
 export default {
+  components:{
+    Floors
+  },
   computed: mapGetters(
     [
-      'getFloor1'
+      'getAllFloors'
     ]
   )
 }
 </script>
 
-<style lang="scss">
-
-</style>

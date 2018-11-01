@@ -6,7 +6,7 @@ const createStore = () =>{
     return new Vuex.Store({
         state:{
             city : "default city",
-            allfloors : {floor1 :0,floor2:0,floor3:0,floor4:0},
+            allfloors : {floor1 :0, floor2:0, floor3:0, floor4:0},
             floor1 : 0,
             floor2 : 0,
             floor3 : 0,
@@ -29,18 +29,22 @@ const createStore = () =>{
             SOCKET_FLOOR1(state,data){
                 console.log("SOCKET_FLOOR1 data ",data)
                 state.floor1 = data.data;
+                state.allfloors.floor1 = data.data;
             },
             SOCKET_FLOOR2(state,data){
                 console.log("SOCKET_FLOOR2 data ",data)
                 state.floor2 = data.data;
+                state.allfloors.floor2 = data.data;
             },
             SOCKET_FLOOR3(state,data){
                 console.log("SOCKET_FLOOR3 data ",data)
                 state.floor3 = data.data;
+                state.allfloors.floor3 = data.data;
             },
             SOCKET_FLOOR4(state,data){
                 console.log("SOCKET_FLOOR4 data ",data)
                 state.floor4 = data.data;
+                state.allfloors.floor4 = data.data;
             },
             SOCKET_DISCONNECT(state, status) {
                 console.log('SOCKET_DISCONNECT ',status);
